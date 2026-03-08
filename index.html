@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Omkar Pathare — Data Scientist & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Syne:wght@400;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Animated top accent bar -->
+<div class="accent-bar"></div>
+
+<!-- Canvas background -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav>
+  <div class="nav-logo">omkar<span>_</span>pathare</div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#certifications">certs</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#publications">publications</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <div class="hamburger" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
+
+<div class="wrapper">
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home">
+    <div class="hero-left">
+
+      <div class="avail-badge">
+        <span class="dot"></span>
+        Available for opportunities &nbsp;·&nbsp; Expected May 2026
+      </div>
+
+      <h1 class="hero-name">
+        Hi, I'm<br>
+        <span class="glitch" data-text="Omkar">Omkar</span>
+      </h1>
+
+      <div class="hero-typing-wrap">
+        <span class="pre">$&nbsp;</span>
+        <span id="typing-text"></span><span class="cursor"></span>
+      </div>
+
+      <p class="hero-bio">
+        Graduate student at Stevens Institute of Technology, building end-to-end ML solutions —
+        from fine-tuning LLMs to production MLOps pipelines. I thrive where
+        <span style="color:var(--red)">technical depth</span> meets creative problem-solving and real business impact.
+        <span class="aside-note">Outside work: F1 fan, amateur race strategist &amp; coffee enthusiast.</span>
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">▶ view_projects()</a>
+        <a href="#contact"  class="btn-outline">✉ get_in_touch()</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+
+      <!-- Status card -->
+      <div class="status-card">
+        <div class="status-label">// Current Status</div>
+        <div class="t-line"><span class="key">role:&nbsp;</span><span class="val" style="color:var(--white)">Data Scientist · ML Engineer</span></div>
+        <div class="t-line"><span class="key">focus:</span><span class="val">LLMs · MLOps · Time-Series</span></div>
+        <div class="t-line"><span class="key">open:&nbsp;</span><span class="val" style="color:#28ca41">● Full-time roles, May 2026</span></div>
+      </div>
+
+      <!-- Profile photo terminal -->
+      <div class="profile-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot r"></span>
+          <span class="t-dot y"></span>
+          <span class="t-dot g"></span>
+          <span>omkar@portfolio:~</span>
+        </div>
+        <div class="profile-img-wrap">
+          <img
+            src="images/profile.JPG"
+            alt="Omkar Pathare"
+            onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=\'height:255px;display:flex;align-items:center;justify-content:center;font-size:64px;background:var(--bg3)\'>🧑‍💻</div>'"
+          />
+        </div>
+        <div class="terminal-info">
+          <div class="t-line"><span class="key">name:&nbsp;</span><span class="val">Omkar Pathare</span></div>
+          <div class="t-line"><span class="key">edu:&nbsp;&nbsp;</span><span class="val">Stevens Inst. of Tech</span></div>
+          <div class="t-line"><span class="key">loc:&nbsp;&nbsp;</span><span class="val">Jersey City, NJ 📍</span></div>
+          <div class="t-line"><span class="key">status:</span><span class="val" style="color:#28ca41">● seeking 2026 roles</span></div>
+        </div>
+      </div>
+
+      <!-- Key stats -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num"><span class="counter" data-target="20">0</span>%</div>
+          <div class="stat-label">Forecast Accuracy ↑</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num"><span class="counter" data-target="17">0</span>%</div>
+          <div class="stat-label">Rec. Precision ↑</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">0.<span class="counter" data-target="88">0</span></div>
+          <div class="stat-label">AUC Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num"><span class="counter" data-target="98">0</span>%</div>
+          <div class="stat-label">Classif. Accuracy</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">cat about.md</span></div>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong style="color:var(--white)">Omkar Shashank Pathare</strong> — a Data Scientist and ML Engineer pursuing my Master's in Data Science at <span style="color:var(--red)">Stevens Institute of Technology</span> (Expected May 2026), with a Bachelor's in AI &amp; Data Science from Thadomal Shahani Engineering College, Mumbai University (2024, <em>Distinction</em>).</p>
+        <p>I engineer scalable ML solutions across supply chain, finance, and healthcare — from fine-tuning LLMs with QLoRA to building Azure-native MLOps pipelines and recommendation engines that actually move the needle. My toolkit spans Python, R, SQL, Scikit-learn, TensorFlow, Hugging Face, Tableau, Spark, and Azure.</p>
+        <p>Outside of data, I'm an F1 fan who occasionally takes it too far — my SARIMA forecasting project on race strategy started as a hobby and turned into one of my favourite pieces of work. I'm also into AI ethics, open-source, and finding patterns in things that aren't supposed to have patterns.</p>
+      </div>
+      <div>
+        <div class="highlight-cards">
+          <div class="h-card"><span class="h-val">+20%</span>Forecast accuracy via Tableau/Power BI dashboards for sales &amp; inventory planning</div>
+          <div class="h-card"><span class="h-val">+17%</span>Recommendation precision — hybrid ML system solving cold-start problem</div>
+          <div class="h-card"><span class="h-val">0.88 AUC</span>Credit card default prediction with 41% faster training via PCA</div>
+          <div class="h-card"><span class="h-val">98.7%</span>Classification accuracy in adolescent behavioural analytics</div>
+          <div class="h-card"><span class="h-val">80%</span>Runtime reduction scaling Spark ETL to multi-worker cluster</div>
+          <div class="h-card"><span class="h-val">94.2%</span>Face recognition accuracy using PCA Eigenfaces + SVM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">ls ./skills --verbose</span></div>
+      <h2 class="section-title">Skills &amp; <span class="accent">Tools</span></h2>
+    </div>
+
+    <!-- Quick stats banner -->
+    <div class="stats-banner reveal">
+      <div class="sb-item"><div class="sb-num gold">8+</div><div class="sb-label">Projects Shipped</div></div>
+      <div class="sb-divider"></div>
+      <div class="sb-item"><div class="sb-num">3</div><div class="sb-label">Certifications</div></div>
+      <div class="sb-divider"></div>
+      <div class="sb-item"><div class="sb-num">2</div><div class="sb-label">Internships</div></div>
+      <div class="sb-divider"></div>
+      <div class="sb-item"><div class="sb-num" style="color:#28ca41">12+</div><div class="sb-label">Technologies</div></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">⚙</span>&nbsp;LANGUAGES & CORE</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>Python</span><span class="skill-pct">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>R</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>SQL</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">🤖</span>&nbsp;ML / AI FRAMEWORKS</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>Scikit-learn</span><span class="skill-pct">92%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>TensorFlow / Keras</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Hugging Face</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">📊</span>&nbsp;DATA & BI TOOLS</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>Tableau</span><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Power BI</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Apache Spark</span><span class="skill-pct">72%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">☁</span>&nbsp;CLOUD & DEVOPS</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>Microsoft Azure</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>AWS</span><span class="skill-pct">65%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="65"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Docker</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">🧠</span>&nbsp;ML TECHNIQUES</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>NLP & LLMs</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Statistical Modeling</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Time-Series Forecasting</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-header"><span class="icon">🔬</span>&nbsp;DOMAIN EXPERTISE</div>
+        <div class="skill-list">
+          <div class="skill-item"><div class="skill-name-row"><span>Big Data Analytics</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>Data Engineering</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div></div>
+          <div class="skill-item"><div class="skill-name-row"><span>MLOps</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certifications">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">ls ./certifications/ --verified</span></div>
+      <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
+    </div>
+    <div class="cert-grid">
+
+      <!-- Databricks Spark -->
+      <a class="cert-card" href="https://credentials.databricks.com/84eee65f-aae9-4d1e-819b-d59cade81878#acc.SoREmh98" target="_blank" rel="noopener">
+        <div class="cert-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M20 5L35 13.5V21L20 29.5L5 21V13.5L20 5Z" stroke="#e8002d" stroke-width="1.5" fill="rgba(232,0,45,0.1)"/>
+            <path d="M20 11L29 16V21L20 26L11 21V16L20 11Z" fill="rgba(232,0,45,0.3)"/>
+            <path d="M20 17L24 19.5V22L20 24.5L16 22V19.5L20 17Z" fill="#e8002d"/>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">Apache Spark Developer</div>
+          <div class="cert-issuer">Databricks · Certified</div>
+          <div class="cert-tags">
+            <span class="cert-tag">Apache Spark</span>
+            <span class="cert-tag">Big Data</span>
+            <span class="cert-tag">Data Engineering</span>
+          </div>
+        </div>
+        <div class="cert-verify">
+          <span class="cert-badge">✓ VERIFIED</span>
+          <span class="cert-link-icon">↗</span>
+        </div>
+      </a>
+
+      <!-- AWS -->
+      <div class="cert-card">
+        <div class="cert-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M10 25C8 23 7 20.5 7 18C7 13 11 9 16 9C18 9 19.8 9.6 21.3 10.8C22.3 8.5 24.6 7 27.3 7C31.3 7 34.5 10.2 34.5 14.2C34.5 14.8 34.4 15.4 34.2 16C35.6 17.1 36.5 18.8 36.5 20.8C36.5 24 33.8 26.5 30.6 26.5H10.5" stroke="#e8002d" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+            <path d="M15 31L12.5 34M20 31V35M25 31L27.5 34" stroke="#e8002d" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">AWS Cloud Practitioner</div>
+          <div class="cert-issuer">Amazon Web Services · Certified</div>
+          <div class="cert-tags">
+            <span class="cert-tag">AWS</span>
+            <span class="cert-tag">Cloud</span>
+            <span class="cert-tag">Infrastructure</span>
+          </div>
+        </div>
+        <div class="cert-verify">
+          <span class="cert-badge">✓ CERTIFIED</span>
+        </div>
+      </div>
+
+      <!-- Google -->
+      <div class="cert-card">
+        <div class="cert-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <circle cx="20" cy="20" r="12" stroke="#e8002d" stroke-width="1.4" opacity="0.5" fill="none"/>
+            <path d="M20 8V20H32" stroke="#e8002d" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="3" fill="#e8002d"/>
+          </svg>
+        </div>
+        <div class="cert-body">
+          <div class="cert-name">Google Data Analytics</div>
+          <div class="cert-issuer">Google · Professional Certificate</div>
+          <div class="cert-tags">
+            <span class="cert-tag">Data Analytics</span>
+            <span class="cert-tag">SQL</span>
+            <span class="cert-tag">Tableau</span>
+          </div>
+        </div>
+        <div class="cert-verify">
+          <span class="cert-badge">✓ CERTIFIED</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">cat resume.json | jq '.experience'</span></div>
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="t-date">MAY 2023 — JUN 2023</div>
+        <div class="t-role">Data Analytics Intern</div>
+        <div class="t-company">Maxgen Technologies Pvt. Ltd. · Mumbai, India</div>
+        <ul class="t-bullets">
+          <li>Analyzed 1M+ sales records with SQL, uncovering a 15% decline across 5 key regions and improving forecast accuracy by 20%.</li>
+          <li>Engineered 10+ Tableau dashboards surfacing trends for strategic leadership across inventory, sales velocity, and regional performance.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="t-date">JAN 2022 — JUN 2022</div>
+        <div class="t-role">Machine Learning Intern</div>
+        <div class="t-company">Robust Results Pvt. Ltd. · Kanpur, India</div>
+        <ul class="t-bullets">
+          <li>Built breast cancer classification models in Python, achieving a 15% accuracy boost through SVM hyperparameter optimization.</li>
+          <li>Processed and analyzed RNA-Seq data from 800+ tumor samples, improving model evaluation pipelines for clinical research workflows.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education sub-section -->
+    <div style="margin-top:54px;">
+      <div class="section-header reveal" style="margin-bottom:26px;">
+        <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">cat resume.json | jq '.education'</span></div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree">M.S. in Data Science</div>
+          <div class="edu-school">Stevens Institute of Technology · Hoboken, NJ</div>
+          <div class="edu-year">Expected May 2026</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">B.E. in Artificial Intelligence &amp; Data Science</div>
+          <div class="edu-school">Thadomal Shahani Engineering College · Mumbai University</div>
+          <div class="edu-year">June 2024 · Distinction 🏅</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">ls ~/projects/ -la</span></div>
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">drawing_with_llm.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Drawing with LLM — Kaggle</div>
+          <p class="p-desc">Fine-tuned Qwen-7B with QLoRA on 10,000 SVG–prompt pairs. SVG canonicalization &amp; validation pipeline. Improved structured prompt generation alignment over zero-shot baseline.</p>
+          <div class="p-tags"><span class="p-tag">Qwen-7B</span><span class="p-tag">QLoRA</span><span class="p-tag">Hugging Face</span><span class="p-tag">NLP</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">job_recommender.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Dual Model Job Recommendation System</div>
+          <p class="p-desc">Hybrid engine: TF-IDF cosine similarity + SVD collaborative filtering on 1,000+ profiles. +17% precision, +14% recall, +19% F1. Solved cold-start with dynamic weighting.</p>
+          <div class="p-tags"><span class="p-tag">Python</span><span class="p-tag">NLP</span><span class="p-tag">SVD</span><span class="p-tag">TF-IDF</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">credit_default.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Credit Card Default Prediction</div>
+          <p class="p-desc">PCA on 23 financial features → 8 principal components preserving 96.3% variance. 41% faster training, 0.88 AUC, 81.4% accuracy on 30,000+ record dataset.</p>
+          <div class="p-tags"><span class="p-tag">PCA</span><span class="p-tag">SVD</span><span class="p-tag">Logistic Regression</span><span class="p-tag">Python</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">internet_usage.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Problematic Internet Usage — Adolescents</div>
+          <p class="p-desc">Multi-class classifiers on 1,500+ records achieving 98.7% accuracy. K-Means (k=4) feature extraction boosted performance by 7.5% and improved generalization across class imbalance.</p>
+          <div class="p-tags"><span class="p-tag">Decision Trees</span><span class="p-tag">K-Means</span><span class="p-tag">Scikit-learn</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">yale_face_pca_svm.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Yale Face Recognition — PCA &amp; SVM</div>
+          <p class="p-desc">94.2% accuracy on Yale/ORL datasets using PCA-based Eigenfaces with 99% dimensionality reduction. SVM outperforms raw-pixel models by ~10%.</p>
+          <div class="p-tags"><span class="p-tag">PCA</span><span class="p-tag">SVM</span><span class="p-tag">Computer Vision</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">airbnb_spark_etl.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Pricing &amp; Regional Trends — Airbnb Markets</div>
+          <p class="p-desc">Scalable Spark ETL on millions of listing records. Log-log regression for price elasticity. Location explained 11–25% of price variability. 80% runtime reduction on multi-worker cluster.</p>
+          <div class="p-tags"><span class="p-tag">Apache Spark</span><span class="p-tag">SQL</span><span class="p-tag">Big Data</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">azure_image_platform.py</span></div>
+        <div class="project-body">
+          <div class="p-title">Cloud-Based Image Sharing Platform</div>
+          <p class="p-desc">Azure-native: Cosmos DB, Blob Storage, Serverless Functions, event-driven MLOps pipeline. Containerized on Docker + App Service with Azure Key Vault secrets management.</p>
+          <div class="p-tags"><span class="p-tag">Azure</span><span class="p-tag">Docker</span><span class="p-tag">Serverless</span><span class="p-tag">MLOps</span></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header"><div class="p-dots"><span class="pd r"></span><span class="pd y"></span><span class="pd g"></span></div><span class="p-file">ferrari_f1_forecasting.R</span></div>
+        <div class="project-body">
+          <div class="p-title">Ferrari F1 Pit-Stop &amp; Lap-Time Forecasting</div>
+          <p class="p-desc">Time-series framework in R modeling Ferrari F1 pit-stop durations and lap times. SARIMA via auto.arima, k-fold CV, ACF/PACF diagnostics. Evaluated via RMSE and MAE.</p>
+          <div class="p-tags"><span class="p-tag">R</span><span class="p-tag">SARIMA</span><span class="p-tag">Time-Series</span><span class="p-tag">Forecasting</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ PUBLICATIONS ═══ -->
+  <section id="publications">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">grep -r "published" ./research/</span></div>
+      <h2 class="section-title">Publications &amp; <span class="accent">Research</span></h2>
+    </div>
+    <div class="pub-card">
+      <div class="pub-title">Enhancing Credit Card Fraud Detection via Generative Adversarial Networks</div>
+      <div class="pub-meta">IJCA · LLMUC Proceedings, 2023</div>
+      <div class="pub-authors">Omkar S. Pathare</div>
+    </div>
+  </section>
+
+  <div class="sec-divider"><div class="line"></div><span style="font-size:11px;color:var(--dim);letter-spacing:3px">///</span><div class="line"></div></div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <div class="cmd-line"><span class="prompt">omkar@portfolio:~$</span>&nbsp;<span class="cmd-text">./send_message.sh --interactive</span></div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-items">
+          <div class="contact-item"><div class="c-icon">✉</div><div><div class="c-label">Email</div><div class="c-val">opathare@stevens.edu</div></div></div>
+          <div class="contact-item"><div class="c-icon">📞</div><div><div class="c-label">Phone</div><div class="c-val">+1 (201) 589-3135</div></div></div>
+          <div class="contact-item"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-val">Jersey City, NJ, USA</div></div></div>
+          <div class="contact-item"><div class="c-icon">🎓</div><div><div class="c-label">University</div><div class="c-val">Stevens Institute of Technology</div></div></div>
+        </div>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="https://github.com/coderx-com?tab=repositories" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/omkar-pathare-337a59234" target="_blank" rel="noopener" class="social-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.55V9H3.56v11.45z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="mini-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
+          <span>interactive_terminal.sh</span>
+        </div>
+        <div class="terminal-body" id="terminal-output">
+          <div class="t-out"><span class="r">█ OMKAR PATHARE TERMINAL v2.0</span></div>
+          <div class="t-out"><span class="o">// Data Scientist · ML Engineer</span></div>
+          <div class="t-out">&nbsp;</div>
+          <div class="t-out">Type <span class="g">help</span> for commands.</div>
+        </div>
+        <div class="terminal-input-row">
+          <span class="t-prompt">omkar@portfolio:~$</span>
+          <input type="text" id="terminal-input" placeholder="type a command..." autocomplete="off" spellcheck="false"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrapper -->
+
+<footer>
+  <span>© 2025 <span class="foot-logo">Omkar Shashank Pathare</span>. All rights reserved.</span>
+  <span style="color:var(--dim)">Built with data &amp; curiosity</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
