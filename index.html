@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Omkar Pathare — Data Scientist & ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo">Omkar Pathare</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:opathare@stevens.edu" class="nav-cta">Hire Me</a>
+  <div class="nav-ham" id="nav-ham">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      <span>Available for opportunities · May 2026</span>
+    </div>
+    <h1 class="hero-name">
+      Omkar<br>
+      <span class="outline">Pathare</span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-role">Data Scientist &amp; <em>ML Engineer</em></p>
+      <div class="hero-meta">
+        <p>Currently at</p>
+        <strong>Stevens Institute of Technology</strong>
+        <p style="margin-top:6px">M.S. Data Science · 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TICKER
+═══════════════════════════════════════ -->
+<div class="ticker">
+  <div class="ticker-track" id="ticker-track">
+    <span class="ticker-item"><strong>+20%</strong> Forecast Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>+17%</strong> Recommendation Precision <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>0.88</strong> AUC Score <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>98.7%</strong> Classification Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>80%</strong> Spark Runtime Reduction <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>94.2%</strong> Face Recognition Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>8+</strong> Projects Shipped <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>3</strong> Certifications <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>1</strong> Publication · IJCA 2023 <span class="ticker-sep">·</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><strong>+20%</strong> Forecast Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>+17%</strong> Recommendation Precision <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>0.88</strong> AUC Score <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>98.7%</strong> Classification Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>80%</strong> Spark Runtime Reduction <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>94.2%</strong> Face Recognition Accuracy <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>8+</strong> Projects Shipped <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>3</strong> Certifications <span class="ticker-sep">·</span></span>
+    <span class="ticker-item"><strong>1</strong> Publication · IJCA 2023 <span class="ticker-sep">·</span></span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     MANIFESTO / ABOUT
+═══════════════════════════════════════ -->
+<div id="about" class="manifesto">
+  <div class="manifesto-text">
+    <div class="section-label">About</div>
+    <p class="manifesto-quote">
+      Redefining what's possible with data —
+      one <strong>model</strong>, one <strong>insight</strong>, one <strong>decision</strong> at a time.
+    </p>
+    <p class="manifesto-body">
+      I'm Omkar Shashank Pathare — a Data Scientist and ML Engineer pursuing my Master's in Data Science
+      at Stevens Institute of Technology. I engineer scalable ML solutions across finance, healthcare, and
+      supply chain — from fine-tuning LLMs with QLoRA to production-grade Azure MLOps pipelines and
+      recommendation engines that genuinely move the needle.<br><br>
+      My toolkit: Python, R, SQL, Scikit-learn, TensorFlow, Hugging Face, Apache Spark, Azure, and
+      everything in between. When I'm not in the data, I'm an F1 fan who occasionally takes it too far.
+    </p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="#projects" class="btn-primary">View My Work ↓</a>
+      <a href="mailto:opathare@stevens.edu" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="manifesto-img">
+    <img
+      src="https://coderx-com.github.io/Portfolio/images/profile.JPG"
+      alt="Omkar Pathare"
+      onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(160deg,#0d1117 0%,#0d2a1a 100%)';"
+    />
+    <div class="img-label">Omkar Pathare · Jersey City, NJ</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     STATS GRID
+═══════════════════════════════════════ -->
+<div class="stats-grid">
+  <div class="stat-block">
+    <div class="stat-num"><span class="accent">+20</span>%</div>
+    <div class="stat-label">Forecast accuracy uplift via BI dashboards</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num"><span class="accent">0.88</span></div>
+    <div class="stat-label">AUC — credit default prediction via PCA</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num"><span class="accent">98.7</span>%</div>
+    <div class="stat-label">Classification accuracy in behavioural analytics</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num"><span class="accent">80</span>%</div>
+    <div class="stat-label">Spark runtime reduction on cluster scale-up</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════ -->
+<div id="projects" class="big-section">
+  <div class="big-section-header">
+    <h2 class="big-title">The<br><em>Work</em></h2>
+    <p class="section-desc">Eight end-to-end ML projects spanning NLP, computer vision, recommendation systems, big data, and time-series forecasting.</p>
+  </div>
+  <div class="projects-list">
+
+    <!-- 01 -->
+    <div class="project-item">
+      <div class="project-num">01</div>
+      <div class="project-body">
+        <div class="project-category">LLM Fine-Tuning · Kaggle Competition</div>
+        <h3 class="project-title">Drawing with LLM</h3>
+        <p class="project-desc">
+          Fine-tuned a Qwen-7B large language model using QLoRA (Quantized Low-Rank Adaptation) on a curated dataset of 10,000 cleaned SVG–natural language prompt pairs sourced from Kaggle competition data in .csv format. The pipeline included SVG canonicalization — normalizing path commands, stripping metadata, and enforcing consistent coordinate systems — alongside structural validation to discard malformed or non-renderable SVGs before training.<br><br>
+          The fine-tuned model learned to generate structured SVG markup from free-form English descriptions of geometric shapes and compositions, significantly outperforming zero-shot Qwen-7B on prompt-to-shape alignment. The training regime used 4-bit quantization to fit the 7B parameter model on a single A100 GPU, with LoRA applied to all attention projection layers. Inference benchmarking showed improved shape accuracy and path coherence over the base model across blind test prompts.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">QLoRA · 4-bit</span>
+          <span class="metric">10K training pairs</span>
+          <span class="metric">Better alignment over baseline</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">Qwen-7B</span><span class="p-tag">QLoRA</span><span class="p-tag">Hugging Face</span><span class="p-tag">Python</span><span class="p-tag">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/LLM" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="project-item">
+      <div class="project-num">02</div>
+      <div class="project-body">
+        <div class="project-category">Recommender Systems · NLP</div>
+        <h3 class="project-title">Dual Model Job Recommendation System</h3>
+        <p class="project-desc">
+          Engineered a hybrid recommendation engine that fuses content-based and collaborative filtering signals to match job seekers with relevant roles. The content-based component uses TF-IDF vectorization on job descriptions and résumé text with cosine similarity scoring, capturing lexical overlap between candidate profiles and postings. The collaborative component applies Singular Value Decomposition (SVD) on a user–item interaction matrix built from 1,000+ applicant profiles and application histories.<br><br>
+          A dynamic weighting mechanism blends both signals at inference time, shifting emphasis toward collaborative filtering for users with sufficient interaction history and toward content-based scoring for cold-start users. This cold-start mitigation was the core design challenge. Final evaluation against a held-out test set showed +17% precision, +14% recall, and +19% F1-score compared to a TF-IDF only baseline. The system was implemented in Python using Scikit-learn with a preprocessing pipeline that handles noisy text, inconsistent formatting, and skill-level normalization.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">+17% Precision</span>
+          <span class="metric">+14% Recall</span>
+          <span class="metric">+19% F1-Score</span>
+          <span class="metric">Cold-start solved</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">Python</span><span class="p-tag">Scikit-learn</span><span class="p-tag">TF-IDF</span><span class="p-tag">SVD</span><span class="p-tag">NLP</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/Dual%20Model%20Job%20Recommendation%20System" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="project-item">
+      <div class="project-num">03</div>
+      <div class="project-body">
+        <div class="project-category">Classification · Clustering · Healthcare</div>
+        <h3 class="project-title">Predicting Problematic Internet Usage in Adolescents</h3>
+        <p class="project-desc">
+          Developed a multi-class classification pipeline to identify levels of problematic internet usage severity in adolescents using a dataset of 1,500+ records containing behavioural, psychological, and physical health features from the Healthy Brain Network study. Two primary classifiers were evaluated: a Decision Tree optimized via CART criterion with max-depth tuning, and a Softmax Logistic Regression with L2 regularization.<br><br>
+          A key methodological contribution was the use of K-Means clustering (k=4, selected via elbow method and silhouette score) as a feature engineering step — cluster assignments were appended as a categorical feature to the training data, introducing unsupervised structure that improved model performance by 7.5% over raw-feature baselines. The final ensemble achieved 98.7% accuracy on the held-out test set. Class imbalance was handled using SMOTE oversampling on the minority classes. Model interpretability was examined via feature importance plots, revealing that parental monitoring, sleep duration, and time spent on social media were the strongest predictors across classes.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">98.7% Accuracy</span>
+          <span class="metric">+7.5% vs baseline</span>
+          <span class="metric">1,500+ records</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">Decision Trees</span><span class="p-tag">Logistic Regression</span><span class="p-tag">K-Means</span><span class="p-tag">SMOTE</span><span class="p-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/AML%20project" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="project-item">
+      <div class="project-num">04</div>
+      <div class="project-body">
+        <div class="project-category">Dimensionality Reduction · Finance</div>
+        <h3 class="project-title">Credit Card Default Prediction with PCA</h3>
+        <p class="project-desc">
+          Applied Principal Component Analysis to 23 financial and behavioral features from a 30,000+ record Taiwanese credit dataset to reduce dimensionality for binary default classification. PCA extracted 8 principal components that collectively explained 96.3% of the total variance — compressing the feature space by 65% while retaining nearly all predictive signal. This reduction cut logistic regression training time by 41% and reduced susceptibility to multicollinearity common in correlated financial features (e.g., payment history across consecutive months).<br><br>
+          The PCA decomposition was computed via Singular Value Decomposition on standardized features (zero mean, unit variance). The final logistic regression classifier achieved 81.4% overall accuracy, an AUC of 0.88 on the ROC curve, and 15% improved recall specifically for default cases — the minority class — which is the critical outcome in credit risk modeling. The project also explored the interpretability of principal components by examining their loadings against original features, linking PC1 predominantly to payment delay history and PC2 to credit utilization ratio.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">0.88 AUC</span>
+          <span class="metric">41% Faster Training</span>
+          <span class="metric">96.3% Variance Retained</span>
+          <span class="metric">30K+ records</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">PCA</span><span class="p-tag">SVD</span><span class="p-tag">Logistic Regression</span><span class="p-tag">Python</span><span class="p-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/AML%20project" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="project-item">
+      <div class="project-num">05</div>
+      <div class="project-body">
+        <div class="project-category">Computer Vision · Eigenfaces</div>
+        <h3 class="project-title">Yale Face Recognition via PCA &amp; SVM</h3>
+        <p class="project-desc">
+          Implemented the classical Eigenfaces approach for facial recognition on the Yale and ORL benchmark datasets, combining PCA-based dimensionality reduction with an SVM classifier. Raw face images (128×128 grayscale pixels) were vectorized into 16,384-dimensional feature vectors, then PCA was applied to compute the eigenvectors of the covariance matrix — reducing dimensionality by 99%, retaining only the top-k eigenvectors (Eigenfaces) that captured maximum inter-class variance.<br><br>
+          The reduced-dimension representations were used as inputs to a multi-class SVM with an RBF kernel, tuned via grid search over C and gamma. The Eigenfaces approach achieved 94.2% recognition accuracy, outperforming the raw-pixel SVM baseline by approximately 10 percentage points — demonstrating the power of feature extraction in high-dimensional image spaces with limited training data. The project included thorough visualization of top Eigenfaces and a confusion matrix analysis showing which individuals were most frequently confused under various lighting conditions.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">94.2% Accuracy</span>
+          <span class="metric">99% Dim. Reduction</span>
+          <span class="metric">+10% over baseline</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">PCA</span><span class="p-tag">SVM</span><span class="p-tag">Eigenfaces</span><span class="p-tag">OpenCV</span><span class="p-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com?tab=repositories" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="project-item">
+      <div class="project-num">06</div>
+      <div class="project-body">
+        <div class="project-category">Big Data · ETL Pipeline · Economics</div>
+        <h3 class="project-title">Pricing &amp; Regional Trends in Airbnb Markets</h3>
+        <p class="project-desc">
+          Designed and deployed a scalable Apache Spark ETL pipeline to ingest, clean, and normalize millions of daily listing and calendar records from the Inside Airbnb open dataset across multiple U.S. cities. The ingestion stage handled messy real-world issues including inconsistently formatted price strings ($1,200/night vs 1200.0), missing amenity fields, irregular date formats, and duplicate listing entries from host re-submissions.<br><br>
+          After cleaning, log transformations were applied to right-skewed price and occupancy distributions, and engineered features were created for borough/region indicators, room type dummies, bedroom/bathroom counts, and amenity richness scores. Log-log regression models were fitted to estimate price elasticity: location explained 11–25% of listing price variability (R² by borough), with East Coast markets showing higher mean prices but tighter variance. Demand elasticities were consistently negative across all markets, confirming standard economic theory. Scaling the pipeline from a single-node local Spark instance to a 4-worker cluster delivered approximately 80% wall-clock runtime reduction on the full dataset, achieved through partition optimization and broadcast joins for small lookup tables.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">80% Runtime Reduction</span>
+          <span class="metric">Millions of records</span>
+          <span class="metric">Multi-city analysis</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">Apache Spark</span><span class="p-tag">Python</span><span class="p-tag">SQL</span><span class="p-tag">Regression</span><span class="p-tag">Big Data</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/Big%20Data" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="project-item">
+      <div class="project-num">07</div>
+      <div class="project-body">
+        <div class="project-category">Cloud Architecture · MLOps · Azure</div>
+        <h3 class="project-title">Cloud-Based Image Sharing Platform</h3>
+        <p class="project-desc">
+          Built a cloud-native, production-grade image-sharing platform using Python and Docker, orchestrated entirely on Microsoft Azure. The backend architecture follows a microservices pattern: Azure SQL / SQL Server handles user authentication and session management; Cosmos DB stores image metadata and user-generated tags; Azure Blob Storage persists raw image binaries with CDN delivery; Table Storage logs audit trails and access events for compliance.<br><br>
+          Serverless Azure Functions run statelessly on demand and integrate with Cosmos DB change-feed triggers to implement a fully event-driven ML pipeline: when a new photo is uploaded, a queue-based microservice automatically sanitizes the image (removing EXIF metadata), resizes it to standardized resolutions, and runs an image classification model to auto-tag content before persisting results back to Cosmos DB. Secrets and API keys are managed via Azure Key Vault with managed identities — no secrets in code or environment variables. The full application is containerized with Docker and deployed to Azure App Service with auto-scaling rules, maintaining sub-200ms latency under simulated load of 500 concurrent users.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">Event-driven MLOps</span>
+          <span class="metric">&lt;200ms latency</span>
+          <span class="metric">Zero-secret architecture</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">Azure</span><span class="p-tag">Docker</span><span class="p-tag">Serverless</span><span class="p-tag">Cosmos DB</span><span class="p-tag">MLOps</span><span class="p-tag">Python</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/Cloud-Based%20Image%20Sharing%20Platform%20(Azure%2C%20Docker%2C%20Serverless)" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="project-item">
+      <div class="project-num">08</div>
+      <div class="project-body">
+        <div class="project-category">Time-Series · Forecasting · R</div>
+        <h3 class="project-title">Ferrari F1 Pit-Stop &amp; Lap-Time Forecasting</h3>
+        <p class="project-desc">
+          Developed a time-series forecasting framework in R to model Ferrari Formula 1 pit-stop durations and lap times across multiple race weekends. The project began with exploratory data analysis: visualizing pit-stop duration distributions by circuit and year, checking for trend, seasonality, and calendar effects (e.g., safety car periods, weather-induced outliers).<br><br>
+          Stationarity was tested using Augmented Dickey-Fuller and KPSS tests; non-stationary series were corrected via first-order differencing and log transformation to stabilize variance. Autocorrelation (ACF) and partial autocorrelation (PACF) plots informed initial ARIMA order selection, which was then formalized using auto.arima — selecting optimal (p,d,q)(P,D,Q)[s] parameters by minimizing AIC/BIC. Models were validated through time-series k-fold cross-validation with expanding windows, and residual diagnostics confirmed no remaining autocorrelation (Ljung-Box test). The resulting SARIMA models captured seasonal race patterns and delivered accurate lap-time forecasts evaluated via RMSE and MAE across held-out races. Strategic implications for pit-stop timing windows were extracted from the forecast intervals.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">SARIMA · auto.arima</span>
+          <span class="metric">k-fold CV validated</span>
+          <span class="metric">Race strategy insights</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">R</span><span class="p-tag">SARIMA</span><span class="p-tag">ACF/PACF</span><span class="p-tag">Time-Series</span><span class="p-tag">Forecasting</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/Time%20Series" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- 09 -->
+    <div class="project-item">
+      <div class="project-num">09</div>
+      <div class="project-body">
+        <div class="project-category">Supply Chain Analytics · BI · SQL</div>
+        <h3 class="project-title">Supply Chain Sales Analytics &amp; Forecasting</h3>
+        <p class="project-desc">
+          Engineered an end-to-end supply chain analytics pipeline to process and analyze over 1 million sales records using SQL, surfacing a 15% revenue decline across 5 key regions tied to seasonal demand misalignment and distribution bottlenecks. The analysis combined regional segmentation, product-level trend decomposition, and inventory turnover metrics to pinpoint root causes at granular geographic and SKU levels.<br><br>
+          Built 10+ Tableau dashboards covering inventory velocity, sales trend heatmaps, demand forecasting overlays, and KPI tracking — adopted by operations leadership for weekly strategic reviews. Integrated historical trend analysis into supply chain planning models, improving forecast accuracy by 20% compared to prior manual estimation methods. The project demonstrated how structured BI tooling and SQL-driven analytics can directly translate into operational decision-making improvements in logistics and inventory management.
+        </p>
+        <div class="project-metrics">
+          <span class="metric">+20% Forecast Accuracy</span>
+          <span class="metric">1M+ records analyzed</span>
+          <span class="metric">15% decline uncovered</span>
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">SQL</span><span class="p-tag">Tableau</span><span class="p-tag">Python</span><span class="p-tag">Supply Chain</span><span class="p-tag">Forecasting</span>
+        </div>
+      </div>
+      <div class="project-side">
+        <a href="https://github.com/coderx-com/projects/tree/main/supply%20chain" target="_blank" class="project-link">
+          View on GitHub
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- /projects-list -->
+</div>
+
+<!-- ═══════════════════════════════════════
+     QUOTE STRIP
+═══════════════════════════════════════ -->
+<div class="quote-strip">
+  <blockquote>
+    "It doesn't matter where you start —<br>it's about the <strong>impact</strong> you leave in the data."
+  </blockquote>
+  <p class="quote-attr">— Omkar Pathare</p>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════ -->
+<div id="skills" class="big-section">
+  <div class="big-section-header">
+    <h2 class="big-title">Skills &amp;<br><em>Tools</em></h2>
+    <p class="section-desc">A full-stack ML toolkit spanning languages, frameworks, cloud platforms, and domain expertise.</p>
+  </div>
+  <div class="skills-section">
+    <div class="skills-col">
+      <div class="skill-category">
+        <div class="skill-cat-title">Languages &amp; Core</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>Python</span><span class="skill-pct">95%</span></div><div class="bar"><div class="bar-fill" data-width="95"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>SQL</span><span class="skill-pct">88%</span></div><div class="bar"><div class="bar-fill" data-width="88"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>R</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-width="80"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title">ML / AI Frameworks</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>Scikit-learn</span><span class="skill-pct">92%</span></div><div class="bar"><div class="bar-fill" data-width="92"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>TensorFlow / Keras</span><span class="skill-pct">78%</span></div><div class="bar"><div class="bar-fill" data-width="78"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Hugging Face</span><span class="skill-pct">75%</span></div><div class="bar"><div class="bar-fill" data-width="75"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title">Data Engineering</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>Apache Spark</span><span class="skill-pct">72%</span></div><div class="bar"><div class="bar-fill" data-width="72"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Statistical Modeling</span><span class="skill-pct">88%</span></div><div class="bar"><div class="bar-fill" data-width="88"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Time-Series Forecasting</span><span class="skill-pct">82%</span></div><div class="bar"><div class="bar-fill" data-width="82"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="skills-col">
+      <div class="skill-category">
+        <div class="skill-cat-title">BI &amp; Visualization</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>Tableau</span><span class="skill-pct">85%</span></div><div class="bar"><div class="bar-fill" data-width="85"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Power BI</span><span class="skill-pct">82%</span></div><div class="bar"><div class="bar-fill" data-width="82"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title">Cloud &amp; DevOps</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>Microsoft Azure</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-width="80"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>AWS</span><span class="skill-pct">65%</span></div><div class="bar"><div class="bar-fill" data-width="65"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Docker</span><span class="skill-pct">70%</span></div><div class="bar"><div class="bar-fill" data-width="70"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title">Domain Expertise</div>
+        <div class="skill-row">
+          <div class="skill-entry"><div class="skill-name-pct"><span>NLP &amp; LLMs</span><span class="skill-pct">80%</span></div><div class="bar"><div class="bar-fill" data-width="80"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>MLOps</span><span class="skill-pct">70%</span></div><div class="bar"><div class="bar-fill" data-width="70"></div></div></div>
+          <div class="skill-entry"><div class="skill-name-pct"><span>Computer Vision</span><span class="skill-pct">68%</span></div><div class="bar"><div class="bar-fill" data-width="68"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CERTIFICATIONS
+═══════════════════════════════════════ -->
+<div class="big-section" style="padding-bottom:0;">
+  <div class="big-section-header">
+    <h2 class="big-title">Certi<br><em>fications</em></h2>
+    <p class="section-desc">Industry-recognized credentials validating expertise across big data, cloud, and analytics.</p>
+  </div>
+</div>
+<div class="certs-row">
+  <div class="cert-block">
+    <div class="cert-issuer">Databricks</div>
+    <div class="cert-name">Apache Spark Developer</div>
+    <div class="cert-skills">
+      <span class="cert-skill">Apache Spark</span>
+      <span class="cert-skill">Big Data</span>
+      <span class="cert-skill">Data Engineering</span>
+    </div>
+    <div class="cert-verified">Verified Credential</div>
+    <a href="https://credentials.databricks.com/84eee65f-aae9-4d1e-819b-d59cade81878#acc.SoREmh98" target="_blank" class="cert-link-btn">
+      View Credential ↗
+    </a>
+  </div>
+  <div class="cert-block">
+    <div class="cert-issuer">Amazon Web Services</div>
+    <div class="cert-name">AWS Cloud Practitioner</div>
+    <div class="cert-skills">
+      <span class="cert-skill">Cloud</span>
+      <span class="cert-skill">AWS</span>
+      <span class="cert-skill">Infrastructure</span>
+    </div>
+    <div class="cert-verified">Certified</div>
+  </div>
+  <div class="cert-block">
+    <div class="cert-issuer">Google</div>
+    <div class="cert-name">Data Analytics Professional</div>
+    <div class="cert-skills">
+      <span class="cert-skill">Analytics</span>
+      <span class="cert-skill">SQL</span>
+      <span class="cert-skill">Tableau</span>
+    </div>
+    <div class="cert-verified">Certified</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     EXPERIENCE
+═══════════════════════════════════════ -->
+<div id="experience" class="big-section">
+  <div class="big-section-header">
+    <h2 class="big-title">Experi<br><em>ence</em></h2>
+    <p class="section-desc">Two industry internships spanning data analytics and applied machine learning.</p>
+  </div>
+  <div class="exp-list">
+    <div class="exp-item">
+      <div class="exp-date-col">
+        <div class="exp-date">May – Jun 2023</div>
+        <div class="exp-company">Maxgen Technologies Pvt. Ltd.<br>Mumbai, India</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-role">Data Analytics Intern</div>
+        <div class="exp-bullets">
+          <p class="exp-bullet">Analyzed 1M+ sales records using SQL, uncovering a 15% decline across 5 key regions and surfacing root causes tied to seasonal demand shifts and distribution gaps.</p>
+          <p class="exp-bullet">Improved forecast accuracy by 20% by integrating historical trend analysis into supply chain planning models used by the operations team.</p>
+          <p class="exp-bullet">Engineered 10+ Tableau dashboards visualizing inventory velocity, regional sales trends, and KPI performance — adopted by leadership for weekly strategic reviews.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-date-col">
+        <div class="exp-date">Jan – Jun 2022</div>
+        <div class="exp-company">Robust Results Pvt. Ltd.<br>Kanpur, India</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-role">Machine Learning Intern</div>
+        <div class="exp-bullets">
+          <p class="exp-bullet">Built breast cancer classification models using Python and Scikit-learn, boosting accuracy by 15% through SVM kernel selection and hyperparameter optimization via grid search.</p>
+          <p class="exp-bullet">Processed and analyzed RNA-Seq expression data from 800+ tumor samples — handling normalization, batch correction, and feature selection for high-dimensional genomic inputs.</p>
+          <p class="exp-bullet">Enhanced model evaluation workflows by implementing stratified k-fold cross-validation and ROC-AUC metrics, improving reporting reliability for clinical research stakeholders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     EDUCATION
+═══════════════════════════════════════ -->
+<div class="big-section" style="padding-bottom:0;">
+  <div class="big-section-header">
+    <h2 class="big-title">Edu<br><em>cation</em></h2>
+  </div>
+</div>
+<div class="edu-row">
+  <div class="edu-card">
+    <div class="edu-deg">Master of Science<br>in Data Science</div>
+    <div class="edu-school">Stevens Institute of Technology · Hoboken, NJ</div>
+    <div class="edu-year">Expected May 2026</div>
+  </div>
+  <div class="edu-card">
+    <div class="edu-deg">B.E. in Artificial Intelligence<br>&amp; Data Science</div>
+    <div class="edu-school">Thadomal Shahani Engineering College · Mumbai University</div>
+    <div class="edu-year">June 2024 · Distinction 🏅</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     PUBLICATION
+═══════════════════════════════════════ -->
+<div class="pub-section">
+  <div class="section-label" style="margin-bottom:32px;">Research</div>
+  <div class="pub-card">
+    <div class="pub-icon">"</div>
+    <div>
+      <div class="pub-title">Enhancing Credit Card Fraud Detection via Generative Adversarial Networks</div>
+      <div class="pub-meta">Omkar S. Pathare · IJCA LLMUC Proceedings, 2023</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ALWAYS BUILDING STRIP
+═══════════════════════════════════════ -->
+<div class="always-building">
+  <div class="ab-text">
+    <span>Always </span><em>Building</em>&nbsp;&nbsp;&nbsp;&nbsp;Always&nbsp;&nbsp;<span>Learning</span>&nbsp;&nbsp;&nbsp;&nbsp;Always&nbsp;&nbsp;<em>Shipping</em>&nbsp;&nbsp;&nbsp;&nbsp;Always&nbsp;&nbsp;<span>Building</span>&nbsp;&nbsp;&nbsp;&nbsp;Always&nbsp;&nbsp;<em>Learning</em>&nbsp;&nbsp;&nbsp;&nbsp;Always&nbsp;&nbsp;<span>Shipping</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<div id="contact" class="contact-section">
+  <div class="contact-left">
+    <div>
+      <div class="section-label">Contact</div>
+      <h2 class="contact-headline">Let's<br><em>Talk</em></h2>
+    </div>
+    <div class="contact-info">
+      <div class="contact-row">
+        <div class="contact-icon">✉</div>
+        <div><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Email</div><strong>opathare@stevens.edu</strong></div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📞</div>
+        <div><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Phone</div><strong>+1 (201) 589-3135</strong></div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <div><div style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:4px;">Location</div><strong>Jersey City, NJ, USA</strong></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-right">
+    <div class="section-label">Socials</div>
+    <p style="color:var(--dim);font-size:14px;line-height:1.7;margin:20px 0 8px;">Open to full-time Data Scientist and ML Engineer roles starting May 2026. Let's connect.</p>
+    <div class="social-grid">
+      <a href="https://github.com/coderx-com?tab=repositories" target="_blank" class="social-card">
+        <div class="s-name">GitHub</div>
+        <div class="s-handle">@coderx-com</div>
+        <div class="s-arr">↗</div>
+      </a>
+      <a href="https://www.linkedin.com/in/omkar-pathare-337a59234" target="_blank" class="social-card">
+        <div class="s-name">LinkedIn</div>
+        <div class="s-handle">omkar-pathare</div>
+        <div class="s-arr">↗</div>
+      </a>
+      <a href="mailto:opathare@stevens.edu" class="social-card">
+        <div class="s-name">Email</div>
+        <div class="s-handle">opathare@stevens.edu</div>
+        <div class="s-arr">↗</div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-tagline">© 2025 Omkar Shashank Pathare</div>
+  <div class="footer-copy">Built with data &amp; curiosity</div>
+</footer>
+
+<!-- ═══════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════ -->
+
+<script src="script.js"></script>
+</body>
+</html>
